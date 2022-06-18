@@ -7372,7 +7372,8 @@ void ZGame::AddEffectRoundState(MMATCH_ROUNDSTATE nRoundState, int nArg)
 				// ¿ÉÁ®¹ö ¸ðµåÀÏ¶§
 				MUID uidTarget;
 				ZObserver* pObserver = ZGetGameInterface()->GetCombatInterface()->GetObserver();
-				if (pObserver && pObserver->IsVisible())
+				//Custom: Fixed By Orby
+				if (pObserver && pObserver->IsVisible() && pObserver->GetTargetCharacter()->GetUID() != MUID(0, 0))
 					uidTarget = pObserver->GetTargetCharacter()->GetUID();
 
 				// ¿ÉÁ®¹ö ¸ðµå°¡ ¾Æ´Ò¶§
