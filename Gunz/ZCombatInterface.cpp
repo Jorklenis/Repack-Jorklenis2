@@ -4815,6 +4815,34 @@ void ZCombatInterface::GameCheckPickCharacter()
 			}
 		}
 #endif
+
+		//Custom: Respawn Trasparente with time animation By Jorklenis2
+		if (ZGetGame())
+		{
+			for (ZCharacterManager::iterator itor = ZGetGame()->m_CharacterManager.begin(); itor != ZGetGame()->m_CharacterManager.end(); ++itor)
+			{
+				ZCharacter* pCharacter = (ZCharacter*)(*itor).second;
+				int zsTimeTras = (timeGetTime() / 50 % 3);
+				int zsRespawnTrasp = 0;
+				for (zsRespawnTrasp = 0; zsRespawnTrasp < zsTimeTras; zsRespawnTrasp++);
+				if (pCharacter && pCharacter->m_pVMesh)
+				{
+					if (pCharacter->isInvincible() && zsRespawnTrasp == 1)
+					{
+						pCharacter->m_pVMesh->SetVisibility(0.0f);
+					}
+					if (pCharacter->isInvincible() && zsRespawnTrasp == 2)
+					{
+						pCharacter->m_pVMesh->SetVisibility(0.5f);
+					}
+					if (pCharacter->isInvincible() && zsRespawnTrasp == 3)
+					{
+						pCharacter->m_pVMesh->SetVisibility(1.0f);
+					}
+				}
+			}
+		}
+
 	if (ZGetGame()->Pick(pMyChar, pos, dir, &pickinfo))
 	{
 		if (pickinfo.pObject)

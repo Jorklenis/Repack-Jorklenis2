@@ -485,6 +485,17 @@ int MDrawContext::TextMultiLine(MRECT& r, const char* szText,int nLineGap,bool b
 	const char* szCurrent=szText;
 	MPOINT* pCurrentPos = pPositions;
 	do {
+
+		//Custom: Chat Background
+
+			MCOLOR prevColor = GetColor();
+			SetColor(0, 0, 0, 255 * ((int)80.f));
+			char* szCurrentCpy = GetPureText(szCurrent);
+			FillRectangle(r.x, y, pFont->GetWidth(szCurrentCpy), pFont->GetHeight());
+			pFont->GetWidth(szCurrentCpy), 200.f * 1.1 / 800.f * (float)MGetWorkspaceWidth();
+			SetColor(prevColor);
+		
+
 		int nX = nLine==0 ? 0 : nIndentation;
 
 		int nOriginalCharCount = MMGetNextLinePos(pFont,szCurrent,r.w-nX,bAutoNextLine,true);
