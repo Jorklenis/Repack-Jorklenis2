@@ -1,4 +1,4 @@
-Repack Jorkenis2 2022
+Repack Jorkenis2 #3
 This source code can be built with Visual Studios 2013 up to the latest versions to come.
 In case you cannot compile the source code, you can contact me using Discord and I will gladly assist you.
 
@@ -110,4 +110,7 @@ ignorelist
 exit
 resetdamage
 rejoin
-
+-----------------------------------
+NOTE: Most codes of some features are public and are adapted to this repack by me.
+In case if you recognize any function or feature of a member please stop the fuss and save your comments.
+If you have been sold this repack please let me know on my discord because you have been scammed and this is completely free and public.
