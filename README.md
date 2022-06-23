@@ -76,41 +76,41 @@ Ping Strike
 
 -------------Commands-------------
 
-admin_mute
-admin_kick
-admin_block
-admin_arch
-admin_serverping
-admin_wall
-admin_hide
-admin_hide2
-admin_godmode
-admin_allkill
-admin_tele
-admin_revive
-admin_master
-admin_pass
-admin_jjang
-admin_nojang
-admin_popup
-staff
-admin_esp
-admin_quest
-admin_banned
-admin_speed
-admin_frame
+/admin_mute
+/admin_kick
+/admin_block
+/admin_arch
+/admin_serverping
+/admin_wall
+/admin_hide
+/admin_hide2
+/admin_godmode
+/admin_allkill
+/admin_tele
+/admin_revive
+/admin_master
+/admin_pass
+/admin_jjang
+/admin_nojang
+/admin_popup
+/staff
+/admin_esp
+/admin_quest
+/admin_banned
+/admin_speed
+/admin_frame
 
-extra
-report
-vip_wall
-time
-ignore
-unignore
-ignorelist
-exit
-resetdamage
-rejoin
+/extra
+/report
+/vip_wall
+/time
+/ignore
+/unignore
+/ignorelist
+/exit
+/resetdamage
+/rejoin
 -----------------------------------
-NOTE: Most codes of some features are public and are adapted to this repack by me.
+__NOTE: <sub>Most codes of some features are public and are adapted to this repack by me.
 In case if you recognize any function or feature of a member please stop the fuss and save your comments.
-If you have been sold this repack please let me know on my discord because you have been scammed and this is completely free and public.
+If you have been sold this repack please let me know on my discord because you have been scammed and this is completely free and public.</sub>
